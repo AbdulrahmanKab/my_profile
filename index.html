@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdulrahman A. Kaabar | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <!-- Anti-flash: apply saved language before render -->
+  <script>(function(){var l=localStorage.getItem('cv_lang')||'ar';document.documentElement.lang=l;document.documentElement.dir=l==='ar'?'rtl':'ltr';}())</script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="#" class="logo">
+        <span class="logo-mark">AK</span>
+        <span class="logo-text">Abdulrahman A. Kaabar</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="lang-btn" id="langToggle" onclick="toggleLang()">EN</button>
+
+      <a href="https://wa.me/972597343064" target="_blank" rel="noopener noreferrer" class="btn btn-dark">
+        <i class="fa-brands fa-whatsapp"></i>
+        Contact Me
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="badge">
+          <span class="dot"></span>
+          Full-Stack Developer
+        </span>
+
+        <h1>Abdulrahman<br />A. Kaabar</h1>
+
+        <h2>Full-Stack Web Developer · Vue.js & Laravel</h2>
+
+        <p class="hero-desc">
+          Computer Engineer and Full-Stack Developer with expertise in building
+          scalable web applications using modern technologies. I enjoy solving
+          complex problems, writing clean code, and delivering high-impact
+          solutions that help businesses grow.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fa-regular fa-folder-open"></i>
+            View Projects
+          </a>
+
+          <a href="https://wa.me/972597343064" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <i class="fa-brands fa-whatsapp"></i>
+            Contact Me
+          </a>
+        </div>
+
+        <div class="info-chips">
+          <div class="chip">
+            <i class="fa-solid fa-location-dot"></i>
+            Gaza, Palestine
+          </div>
+          <a href="https://wa.me/972597343064" target="_blank" rel="noopener noreferrer" class="chip">
+            <i  class="fa-brands fa-whatsapp"></i>
+            <span style="direction: ltr;">+972 597 343 064</span>
+          </a>
+          <div class="chip">
+            <i class="fa-regular fa-envelope"></i>
+            kabar.abdulrahman@gmail.com
+          </div>
+        </div>
+
+        <div class="socials">
+          <a href="https://github.com/AbdulrahmanKab"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/abdulrahman-kabar-14bb731b8/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://wa.me/972597343064" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap">
+        <div class="hero-shape"></div>
+        <img src="./my_image.png" alt="Profile" class="hero-image" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Summary -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="card about-card">
+        <div class="about-main">
+          <div class="about-icon">
+            <i class="fa-regular fa-user"></i>
+          </div>
+
+          <div>
+            <h3 class="section-card-title">About Me</h3>
+            <p>
+              I am a Computer Engineer and Full-Stack Developer with a strong
+              passion for building reliable, user-centric web applications. I
+              specialize in front-end development with Vue.js and back-end
+              development with Laravel & PHP, RESTful APIs, and database design.
+              I thrive in collaborative environments and focus on writing
+              maintainable code that delivers real impact.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-highlights">
+          <div class="highlight">
+            <i class="fa-regular fa-lightbulb"></i>
+            <h4>Problem Solver</h4>
+            <p>I love turning complex problems into simple, effective solutions.</p>
+          </div>
+
+          <div class="highlight">
+            <i class="fa-solid fa-code"></i>
+            <h4>Clean Code</h4>
+            <p>Writing maintainable, scalable, and well-structured code.</p>
+          </div>
+
+          <div class="highlight">
+            <i class="fa-solid fa-users"></i>
+            <h4>Team Player</h4>
+            <p>Collaborative mindset with excellent communication skills.</p>
+          </div>
+
+          <div class="highlight">
+            <i class="fa-solid fa-bullseye"></i>
+            <h4>Result Driven</h4>
+            <p>Focused on delivering high-quality solutions that create impact.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills + Experience -->
+  <section class="section">
+    <div class="container two-cols">
+      <!-- Skills -->
+      <div id="skills" class="card">
+        <h3 class="section-card-title">Skills & Languages</h3>
+
+        <div class="block-title">Technical Skills</div>
+
+        <div class="skill-grid">
+          <div class="skill-box"><i class="fa-brands fa-vuejs"></i><span>Vue.js</span></div>
+          <div class="skill-box"><i class="fa-brands fa-laravel"></i><span>Laravel / PHP</span></div>
+          <div class="skill-box"><i class="fa-brands fa-html5"></i><span>HTML5 / CSS3</span></div>
+          <div class="skill-box"><i class="fa-brands fa-bootstrap"></i><span>Bootstrap / Tailwind</span></div>
+          <div class="skill-box"><i class="fa-solid fa-plug"></i><span>RESTful API</span></div>
+          <div class="skill-box"><i class="fa-solid fa-database"></i><span>MySQL / Oracle</span></div>
+          <div class="skill-box"><i class="fa-brands fa-github"></i><span>Git / GitHub / GitLab</span></div>
+          <div class="skill-box"><i class="fa-solid fa-server"></i><span>Server Hosting</span></div>
+        </div>
+
+        <div class="block-title">Languages</div>
+        <div class="languages">
+          <div class="language-box">
+            <div class="lang-circle">ع</div>
+            <div>
+              <strong>Arabic</strong>
+              <span>Native</span>
+            </div>
+          </div>
+
+          <div class="language-box">
+            <div class="lang-circle">EN</div>
+            <div>
+              <strong>English</strong>
+              <span>Fluent</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <div id="experience" class="card">
+        <h3 class="section-card-title">Experience</h3>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <div>
+                  <h4>Frontend Vue.js Developer</h4>
+                  <span>CyberX · Remote</span>
+                </div>
+                <small>Present</small>
+              </div>
+              <ul>
+                <li>Developed responsive, high-performance front-end applications using Vue.js and modern JavaScript.</li>
+                <li>Integrated RESTful APIs and optimized user experience for web platforms.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <div>
+                  <h4>Web Engineer</h4>
+                  <span>Ministry of Transport · Gaza, Palestine · On-site</span>
+                </div>
+                <small>2022 – present</small>
+              </div>
+              <ul>
+                <li>Built and maintained web systems for internal use, improving operational efficiency.</li>
+                <li>Collaborated with cross-functional teams to deliver secure and reliable solutions.</li>
+              </ul>
+            </div>
+          </div>
+
+
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <div>
+                  <h4>Vue.js & Laravel Developer</h4>
+                  <span>Global Medical Group · Gaza, Palestine · On-site</span>
+                </div>
+                <small>2020 – 2022</small>
+              </div>
+              <ul>
+                <li>Building full-stack web applications with Vue.js, Laravel, and RESTful APIs.</li>
+                <li>Designed database structures and implemented backend services for healthcare platforms.</li>
+              </ul>
+            </div>
+          </div>
+                    <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <div>
+                  <h4>Web Developer</h4>
+                  <span>Motiv-x · Austria (Remote)</span>
+                </div>
+                <small>2017 – 2018</small>
+              </div>
+              <ul>
+                <li>Developed dynamic websites and web applications for international clients.</li>
+                <li>Implemented best practices in code quality, performance, and security.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h3>Projects</h3>
+        <a href="projects.html" class="view-all">View All Projects <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=800&q=80" alt="Sulala Animal Rescue" />
+          <div class="project-body">
+            <h4>Sulala Animal Rescue 🇵🇸</h4>
+            <p>First animal rescue NGO in Palestine — multilingual platform with donations, adoption, and media coverage.</p>
+            <div class="tags">
+              <span>Laravel</span>
+              <span>Bootstrap</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Grovere Real Estate" />
+          <div class="project-body">
+            <h4>Grovere — قروف 🇸🇦</h4>
+            <p>Real estate development platform for Groove Investment, Saudi Arabia — project listings with unit availability tracking.</p>
+            <div class="tags">
+              <span>Bootstrap</span>
+              <span>Laravel</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="MoT E-Services Portal" />
+          <div class="project-body">
+            <h4>MoT E-Services Portal 🇵🇸</h4>
+            <p>Government e-services portal for the Palestinian Ministry of Transport — vehicles, licenses, and exam results.</p>
+            <div class="tags">
+              <span>Vue.js</span>
+              <span>Laravel</span>
+              <span>Oracle DB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education + Training -->
+  <section id="education" class="section">
+    <div class="container two-cols">
+      <div class="card">
+        <h3 class="section-card-title">Education</h3>
+
+        <div class="edu-item">
+          <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="edu-info">
+            <h4>Islamic University of Gaza</h4>
+            <p>Bachelor's in Computer Engineering</p>
+          </div>
+          <span>Sep 2015 – Aug 2020</span>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+          <div class="edu-info">
+            <h4>Abu Thar Al-Ghafari High School</h4>
+            <p>Scientific Stream</p>
+          </div>
+          <span>Aug 2014 – Jul 2015</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 class="section-card-title">Training & Certifications</h3>
+      <div class="training-item">
+          <div>
+            <h4>High Five</h4>
+            <p>Laravel Training</p>
+          </div>
+          <span>Jan 2020 – Feb 2021</span>
+        </div>
+        <div class="training-item">
+          <div>
+            <h4>Shift ICT</h4>
+            <p>Developer Training</p>
+          </div>
+          <span>Jun 2019 – Aug 2019</span>
+        </div>
+
+        <div class="training-item">
+          <div>
+            <h4>Islamic University of Gaza</h4>
+            <p>Laravel Course</p>
+          </div>
+          <span>Aug 201 – Oct 2018</span>
+        </div>
+
+        <div class="training-item">
+          <div>
+            <h4>Vision Plus</h4>
+            <p>Laravel Course</p>
+          </div>
+          <span>Jun 2017 – Aug 2017</span>
+        </div>
+
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="cta">
+        <div class="cta-left">
+          <div class="cta-icon">
+            <i class="fa-regular fa-paper-plane"></i>
+          </div>
+          <div>
+            <h3>Let's build something amazing together</h3>
+            <p>Have a project in mind or want to collaborate? I'm always open to new opportunities.</p>
+          </div>
+        </div>
+
+        <a href="https://wa.me/972597343064" target="_blank" rel="noopener noreferrer" class="btn btn-light">
+          <i class="fa-brands fa-whatsapp"></i>
+          Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="footer-logo">AK</span>
+        <span>© 2026 Abdulrahman A. Kaabar. All rights reserved.</span>
+      </div>
+
+      <div class="footer-right">
+        <span><i class="fa-solid fa-location-dot"></i> Gaza, Palestine</span>
+        <a href="https://wa.me/972597343064" target="_blank" rel="noopener noreferrer" style="color:inherit;display:inline-flex;align-items:center;gap:8px;"><i class="fa-brands fa-whatsapp"></i> +972 597 343 064</a>
+        <span><i class="fa-regular fa-envelope"></i> kabar.abdulrahman@gmail.com</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    /* ══════════════════════════════════════════════════════════
+       i18n – Portfolio (index.html)
+       Default language: Arabic (ar). Toggle stores to localStorage.
+    ══════════════════════════════════════════════════════════ */
+    const T = {
+      ar: {
+        title: 'عبدالرحمن أ. كعبر | ملف الأعمال',
+        lang_lbl: 'EN',
+        nav: ['من أنا', 'المهارات', 'الخبرات', 'المشاريع', 'التعليم', 'تواصل معي'],
+        nav_btn: 'تواصل معي',
+        badge: 'مطور متكامل',
+        h2: 'مطور ويب متكامل ·',
+        hero_desc: 'مهندس حاسوب ومطور ويب متكامل، أتمتع بشغف قوي لبناء تطبيقات ويب موثوقة وموجهة للمستخدم. أتخصص في التطوير الأمامي باستخدام Vue.js والتطوير الخلفي مع Laravel & PHP وواجهات RESTful وتصميم قواعد البيانات.',
+        btn1: 'عرض المشاريع',
+        btn2: 'تواصل معي',
+        chip_location: 'غزة، فلسطين',
+        about_title: 'عن نفسي',
+        about_text: 'أنا مهندس حاسوب ومطور ويب متكامل بشغف حقيقي لبناء تطبيقات ويب موثوقة وموجهة نحو المستخدم. أتخصص في تطوير الواجهة الأمامية مع Vue.js والخلفية مع Laravel & PHP وواجهات برمجة التطبيقات وتصميم قواعد البيانات. أزدهر في بيئات التعاون وأركز على كتابة كود قابل للصيانة يُحدث تأثيرًا حقيقيًا.',
+        hl: [
+          ['حلّال المشكلات', 'أحب تحويل المشكلات المعقدة إلى حلول بسيطة وفعالة.'],
+          ['كود نظيف', 'كتابة كود قابل للصيانة وقابل للتوسع وجيد الهيكلة.'],
+          ['روح الفريق', 'عقلية تعاونية مع مهارات تواصل ممتازة.'],
+          ['موجّه نحو النتائج', 'التركيز على تقديم حلول عالية الجودة تُحدث تأثيرًا.'],
+        ],
+        skills_title: 'المهارات واللغات',
+        tech_skills: 'المهارات التقنية',
+        lang_section: 'اللغات',
+        langs: [['العربية', 'لغة أم'], ['الإنجليزية', 'طليق']],
+        exp_title: 'الخبرات',
+        exp: [
+          ['مطور Vue.js أمامي', 'CyberX · عن بُعد', 'حتى الآن',
+           'تطوير تطبيقات أمامية سريعة ومتجاوبة باستخدام Vue.js و JavaScript الحديث.',
+           'دمج واجهات RESTful وتحسين تجربة المستخدم لمنصات الويب.'],
+          ['مهندس ويب', 'وزارة النقل · غزة، فلسطين · حضوري', '2022 – الحاضر',
+           'بناء وصيانة أنظمة ويب داخلية لتحسين الكفاءة التشغيلية.',
+           'التعاون مع فرق متعددة لتقديم حلول آمنة وموثوقة.'],
+          ['مطور Vue.js & Laravel', 'المجموعة الطبية العالمية · غزة، فلسطين · حضوري', '2020 – 2022',
+           'بناء تطبيقات ويب متكاملة باستخدام Vue.js وLaravel وواجهات برمجة التطبيقات.',
+           'تصميم هياكل قواعد البيانات وتنفيذ خدمات الخلفية لمنصات الرعاية الصحية.'],
+          ['مطور ويب', 'Motiv-x · النمسا (عن بُعد)', '2017 – 2018',
+           'تطوير مواقع وتطبيقات ويب ديناميكية لعملاء دوليين.',
+           'تطبيق أفضل الممارسات في جودة الكود والأداء والأمان.'],
+        ],
+        proj_title: 'المشاريع',
+        view_all: 'عرض جميع المشاريع',
+        projs: [
+          ['Sulala — إنقاذ الحيوانات 🇵🇸', 'أول منظمة لإنقاذ الحيوانات في فلسطين — منصة متعددة اللغات مع التبرعات والتبني والتغطية الإعلامية.'],
+          ['Grovere — قروف 🇸🇦', 'منصة تطوير عقاري لشركة قروف، المملكة العربية السعودية — قوائم المشاريع مع تتبع توفر الوحدات.'],
+          ['بوابة الخدمات الإلكترونية 🇵🇸', 'بوابة خدمات حكومية إلكترونية لوزارة النقل الفلسطينية — المركبات والرخص ونتائج الاختبارات.'],
+        ],
+        edu_title: 'التعليم',
+        edu: [
+          ['الجامعة الإسلامية بغزة', 'بكالوريوس في هندسة الحاسوب', 'سبتمبر 2015 – أغسطس 2020'],
+          ['مدرسة أبو ذر الغفاري الثانوية', 'الفرع العلمي', 'أغسطس 2014 – يوليو 2015'],
+        ],
+        train_title: 'التدريب والشهادات',
+        train: [
+          ['High Five', 'تدريب Laravel', 'يناير 2020 – فبراير 2021'],
+          ['Shift ICT', 'تدريب المطورين', 'يونيو 2019 – أغسطس 2019'],
+          ['الجامعة الإسلامية بغزة', 'دورة Laravel', 'أغسطس 2018 – أكتوبر 2018'],
+          ['Vision Plus', 'دورة Laravel', 'يونيو 2017 – أغسطس 2017'],
+        ],
+        cta_h3: 'لنبني شيئًا مذهلًا معًا',
+        cta_p: 'هل لديك مشروع في ذهنك أو تريد التعاون؟ أنا دائمًا منفتح على فرص جديدة.',
+        cta_btn: 'تواصل عبر واتساب',
+        footer_copy: '© 2026 عبدالرحمن أ. كعبر. جميع الحقوق محفوظة.',
+        footer_loc: 'غزة، فلسطين',
+      },
+      en: {
+        title: 'Abdulrahman A. Kaabar | Portfolio',
+        lang_lbl: 'العربية',
+        nav: ['About', 'Skills', 'Experience', 'Projects', 'Education', 'Contact'],
+        nav_btn: 'Contact Me',
+        badge: 'Full-Stack Developer',
+        h2: 'Full-Stack Web Developer · Vue.js & Laravel',
+        hero_desc: 'Computer Engineer and Full-Stack Developer with expertise in building scalable web applications using modern technologies. I enjoy solving complex problems, writing clean code, and delivering high-impact solutions that help businesses grow.',
+        btn1: 'View Projects',
+        btn2: 'Contact Me',
+        chip_location: 'Gaza, Palestine',
+        about_title: 'About Me',
+        about_text: 'I am a Computer Engineer and Full-Stack Developer with a strong passion for building reliable, user-centric web applications. I specialize in front-end development with Vue.js and back-end development with Laravel & PHP, RESTful APIs, and database design. I thrive in collaborative environments and focus on writing maintainable code that delivers real impact.',
+        hl: [
+          ['Problem Solver', 'I love turning complex problems into simple, effective solutions.'],
+          ['Clean Code', 'Writing maintainable, scalable, and well-structured code.'],
+          ['Team Player', 'Collaborative mindset with excellent communication skills.'],
+          ['Result Driven', 'Focused on delivering high-quality solutions that create impact.'],
+        ],
+        skills_title: 'Skills & Languages',
+        tech_skills: 'Technical Skills',
+        lang_section: 'Languages',
+        langs: [['Arabic', 'Native'], ['English', 'Fluent']],
+        exp_title: 'Experience',
+        exp: [
+          ['Frontend Vue.js Developer', 'CyberX · Remote', 'Present',
+           'Developed responsive, high-performance front-end applications using Vue.js and modern JavaScript.',
+           'Integrated RESTful APIs and optimized user experience for web platforms.'],
+          ['Web Engineer', 'Ministry of Transport · Gaza, Palestine · On-site', '2022 – present',
+           'Built and maintained web systems for internal use, improving operational efficiency.',
+           'Collaborated with cross-functional teams to deliver secure and reliable solutions.'],
+          ['Vue.js & Laravel Developer', 'Global Medical Group · Gaza, Palestine · On-site', '2020 – 2022',
+           'Building full-stack web applications with Vue.js, Laravel, and RESTful APIs.',
+           'Designed database structures and implemented backend services for healthcare platforms.'],
+          ['Web Developer', 'Motiv-x · Austria (Remote)', '2017 – 2018',
+           'Developed dynamic websites and web applications for international clients.',
+           'Implemented best practices in code quality, performance, and security.'],
+        ],
+        proj_title: 'Projects',
+        view_all: 'View All Projects',
+        projs: [
+          ['Sulala Animal Rescue 🇵🇸', 'First animal rescue NGO in Palestine — multilingual platform with donations, adoption, and media coverage.'],
+          ['Grovere — قروف 🇸🇦', 'Real estate development platform for Groove Investment, Saudi Arabia — project listings with unit availability tracking.'],
+          ['MoT E-Services Portal 🇵🇸', 'Government e-services portal for the Palestinian Ministry of Transport — vehicles, licenses, and exam results.'],
+        ],
+        edu_title: 'Education',
+        edu: [
+          ['Islamic University of Gaza', "Bachelor's in Computer Engineering", 'Sep 2015 – Aug 2020'],
+          ['Abu Thar Al-Ghafari High School', 'Scientific Stream', 'Aug 2014 – Jul 2015'],
+        ],
+        train_title: 'Training & Certifications',
+        train: [
+          ['High Five', 'Laravel Training', 'Jan 2020 – Feb 2021'],
+          ['Shift ICT', 'Developer Training', 'Jun 2019 – Aug 2019'],
+          ['Islamic University of Gaza', 'Laravel Course', 'Aug 2018 – Oct 2018'],
+          ['Vision Plus', 'Laravel Course', 'Jun 2017 – Aug 2017'],
+        ],
+        cta_h3: "Let's build something amazing together",
+        cta_p: "Have a project in mind or want to collaborate? I'm always open to new opportunities.",
+        cta_btn: 'Chat on WhatsApp',
+        footer_copy: '© 2026 Abdulrahman A. Kaabar. All rights reserved.',
+        footer_loc: 'Gaza, Palestine',
+      }
+    };
+
+    /* Update text nodes while preserving child elements (icons etc.) */
+    function setTxt(el, text) {
+      if (!el) return;
+      let done = false;
+      el.childNodes.forEach(n => {
+        if (n.nodeType === 3 && n.textContent.trim()) {
+          n.textContent = ' ' + text + ' ';
+          done = true;
+        }
+      });
+      if (!done) el.textContent = text;
+    }
+
+    function applyLang(lang) {
+      const t = T[lang];
+      const D = document;
+      D.documentElement.lang = lang;
+      D.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      D.title = t.title;
+
+      /* Lang toggle label */
+      const lb = D.getElementById('langToggle');
+      if (lb) lb.textContent = t.lang_lbl;
+
+      /* Nav */
+      D.querySelectorAll('.nav a').forEach((a, i) => { if (t.nav[i]) a.textContent = t.nav[i]; });
+      setTxt(D.querySelector('.navbar .btn-dark'), t.nav_btn);
+
+      /* Hero */
+      setTxt(D.querySelector('.badge'), t.badge);
+      const h2el = D.querySelector('.hero-content h2');
+      if (h2el) h2el.textContent = t.h2;
+      const descEl = D.querySelector('.hero-desc');
+      if (descEl) descEl.textContent = t.hero_desc;
+      const hBtns = D.querySelectorAll('.hero-actions .btn');
+      setTxt(hBtns[0], t.btn1);
+      setTxt(hBtns[1], t.btn2);
+      setTxt(D.querySelector('.info-chips .chip'), t.chip_location);
+
+      /* About */
+      const aboutTitle = D.querySelector('#about .section-card-title');
+      if (aboutTitle) aboutTitle.textContent = t.about_title;
+      const aboutP = D.querySelector('#about .about-main p');
+      if (aboutP) aboutP.textContent = t.about_text;
+      D.querySelectorAll('.highlight').forEach((h, i) => {
+        if (!t.hl[i]) return;
+        h.querySelector('h4').textContent = t.hl[i][0];
+        h.querySelector('p').textContent  = t.hl[i][1];
+      });
+
+      /* Skills */
+      const skillsTitle = D.querySelector('#skills .section-card-title');
+      if (skillsTitle) skillsTitle.textContent = t.skills_title;
+      const bts = D.querySelectorAll('#skills .block-title');
+      if (bts[0]) bts[0].textContent = t.tech_skills;
+      if (bts[1]) bts[1].textContent = t.lang_section;
+      D.querySelectorAll('.language-box').forEach((b, i) => {
+        if (!t.langs[i]) return;
+        b.querySelector('strong').textContent = t.langs[i][0];
+        b.querySelector('span').textContent   = t.langs[i][1];
+      });
+
+      /* Experience */
+      const expTitle = D.querySelector('#experience .section-card-title');
+      if (expTitle) expTitle.textContent = t.exp_title;
+      D.querySelectorAll('.timeline-item').forEach((item, i) => {
+        if (!t.exp[i]) return;
+        const [title, company, date, li1, li2] = t.exp[i];
+        item.querySelector('h4').textContent    = title;
+        item.querySelector('span').textContent  = company;
+        item.querySelector('small').textContent = date;
+        const lis = item.querySelectorAll('li');
+        if (lis[0]) lis[0].textContent = li1;
+        if (lis[1]) lis[1].textContent = li2;
+      });
+
+      /* Projects */
+      const projH3 = D.querySelector('#projects .section-head h3');
+      if (projH3) projH3.textContent = t.proj_title;
+      setTxt(D.querySelector('#projects .view-all'), t.view_all);
+      D.querySelectorAll('.project-card').forEach((c, i) => {
+        if (!t.projs[i]) return;
+        c.querySelector('h4').textContent = t.projs[i][0];
+        c.querySelector('p').textContent  = t.projs[i][1];
+      });
+
+      /* Education */
+      const eduCards = D.querySelectorAll('#education .card');
+      if (eduCards[0]) eduCards[0].querySelector('.section-card-title').textContent = t.edu_title;
+      D.querySelectorAll('.edu-item').forEach((item, i) => {
+        if (!t.edu[i]) return;
+        item.querySelector('.edu-info h4').textContent = t.edu[i][0];
+        item.querySelector('.edu-info p').textContent  = t.edu[i][1];
+        item.querySelector('span').textContent         = t.edu[i][2];
+      });
+
+      /* Training */
+      if (eduCards[1]) eduCards[1].querySelector('.section-card-title').textContent = t.train_title;
+      D.querySelectorAll('.training-item').forEach((item, i) => {
+        if (!t.train[i]) return;
+        item.querySelector('h4').textContent   = t.train[i][0];
+        item.querySelector('p').textContent    = t.train[i][1];
+        item.querySelector('span').textContent = t.train[i][2];
+      });
+
+      /* CTA */
+      const ctaH3 = D.querySelector('.cta h3');
+      if (ctaH3) ctaH3.textContent = t.cta_h3;
+      const ctaP = D.querySelector('.cta p');
+      if (ctaP) ctaP.textContent = t.cta_p;
+      setTxt(D.querySelector('#contact .btn-light'), t.cta_btn);
+
+      /* Footer */
+      const fSpans = D.querySelectorAll('.footer-left span');
+      if (fSpans[1]) fSpans[1].textContent = t.footer_copy;
+      setTxt(D.querySelector('.footer-right span'), t.footer_loc);
+    }
+
+    function toggleLang() {
+      const next = document.documentElement.lang === 'ar' ? 'en' : 'ar';
+      localStorage.setItem('cv_lang', next);
+      applyLang(next);
+    }
+
+    /* Apply on DOMContentLoaded */
+    applyLang(localStorage.getItem('cv_lang') || 'ar');
+  </script>
+</body>
+</html>
