@@ -876,7 +876,7 @@ a.chip:hover {
 }
 
 /* ── RTL (Arabic) overrides ──────────────────────────────── */
-[dir="rtl"] body {
+[lang="ar"] body {
   font-family: "Cairo", sans-serif;
 }
 
