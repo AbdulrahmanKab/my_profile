@@ -933,7 +933,7 @@ a.chip:hover {
 
 /* CTA */
 [dir="rtl"] .cta {
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
 }
 [dir="rtl"] .cta-left {
   flex-direction: row-reverse;
