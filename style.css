@@ -843,7 +843,7 @@ a.chip:hover {
 
 /* section-head: keep h3 on right, link on left in RTL */
 [dir="rtl"] .section-head {
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
 }
 
 /* About card two-col: keep text first in RTL */
