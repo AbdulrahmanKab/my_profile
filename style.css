@@ -702,6 +702,10 @@ a.chip:hover {
     display: none;
   }
 
+  .whatsapp-nav {
+    display: none;
+  }
+
   .hero-grid,
   .about-card,
   .two-cols,
@@ -780,6 +784,42 @@ a.chip:hover {
 
   .info-chips {
     flex-direction: column;
+  }
+}
+
+/* ── Floating WhatsApp button (mobile only) ─────────────── */
+.whatsapp-fab {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .whatsapp-fab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #25d366;
+    color: #fff;
+    font-size: 26px;
+    box-shadow: 0 6px 24px rgba(37, 211, 102, .45);
+    z-index: 1000;
+    transition: transform .2s, box-shadow .2s;
+    text-decoration: none;
+  }
+
+  .whatsapp-fab:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 32px rgba(37, 211, 102, .55);
+  }
+
+  [dir="rtl"] .whatsapp-fab {
+    right: auto;
+    left: 24px;
   }
 }
 
