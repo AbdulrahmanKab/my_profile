@@ -37,7 +37,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
   <!-- Anti-flash: apply saved language before render -->
-  <script>(function(){var l=localStorage.getItem('cv_lang')||'ar';document.documentElement.lang=l;document.documentElement.dir=l==='ar'?'rtl':'ltr';}())</script>
+  <script>(function(){document.documentElement.lang='ar';document.documentElement.dir='rtl';}())</script>
 
   <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
@@ -1057,11 +1057,10 @@
 
     function toggleLang() {
       const next = document.documentElement.lang === 'ar' ? 'en' : 'ar';
-      localStorage.setItem('cv_lang', next);
       applyLang(next);
     }
 
-    applyLang(localStorage.getItem('cv_lang') || 'ar');
+    applyLang('ar');
   </script>
 
 </body>

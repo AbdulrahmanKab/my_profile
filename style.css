@@ -759,8 +759,6 @@ a.chip:hover {
 
   .timeline-top,
   .section-head,
-  .cta,
-  .cta-left,
   .edu-item,
   .training-item {
     grid-template-columns: 1fr;
@@ -771,6 +769,37 @@ a.chip:hover {
   .edu-item,
   .training-item {
     display: flex;
+  }
+
+  .cta {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    padding: 24px 20px;
+  }
+
+  .cta-left {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .cta h3 {
+    font-size: 20px;
+  }
+
+  .cta .btn-light {
+    width: 100%;
+    justify-content: center;
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  [dir="rtl"] .cta,
+  [dir="rtl"] .cta-left {
+    flex-direction: column;
+    align-items: center;
   }
 
   .btn {
